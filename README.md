@@ -2,6 +2,10 @@
 
 WordPressのテスト環境。いろいろ放り込む
 
+## usage
+
+`$ docker-compose up -d`
+
 ## themes
 
 `/themes/frames`
