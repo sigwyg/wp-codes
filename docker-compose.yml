@@ -1,7 +1,7 @@
 version: "3.7"
 services:
     wordpress:
-        image: wordpress:latest
+        image: wordpress:5.2.1
         restart: always
         ports:
             - "9000:80"
@@ -10,7 +10,7 @@ services:
         env_file: .env
         volumes:
             - ./themes/frames:/var/www/html/wp-content/themes/frames
-            - ./plugins/wp-utils:/var/www/html/wp-content/plugins/wp-utils
+            - ./plugins/wpc-utils:/var/www/html/wp-content/plugins/wp-utils
     db:
         image: mysql:5.7
         restart: always
