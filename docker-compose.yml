@@ -1,13 +1,16 @@
 version: "3.7"
 services:
     wordpress:
-        image: wordpress:5.2.1
+        build:
+            context: .
+            dockerfile: Dockerfile
         restart: always
         ports:
             - "9000:80"
         environment:
             WORDPRESS_DB_HOST: db
         env_file: .env
+        working_dir: /var/www/html
         volumes:
             - ./themes/frames:/var/www/html/wp-content/themes/frames
             - ./plugins/wpc-utils:/var/www/html/wp-content/plugins/wp-utils
