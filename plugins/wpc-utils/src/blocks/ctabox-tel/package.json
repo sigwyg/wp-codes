@@ -21,7 +21,7 @@
   "license": "GPL-2.0-or-later",
   "devDependencies": {
     "@svgr/webpack": "^4.3.0",
-    "@wordpress/scripts": "^3.2.1",
+    "@wordpress/scripts": "^31.4.0",
     "css-loader": "^2.1.1",
     "csswring": "^7.0.0",
     "file-loader": "^4.0.0",
